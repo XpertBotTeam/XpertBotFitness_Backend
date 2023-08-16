@@ -1,0 +1,24 @@
+Fitness App Entity
+
+-Users
+ -name
+ -email
+ -password
+ 
+-Coach
+  -name
+  -photo
+  -certificates
+  -youtube channel
+
+ -Workout
+  -coach id 
+  -name
+  -description
+  -duration
+
+ -Exercise
+  -workout_id
+  -title
+  -duration
+  -youtube link
