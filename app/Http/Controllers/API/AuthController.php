@@ -37,7 +37,7 @@ class AuthController extends Controller
 
    public function register(Request $request)
    {
-   
+     
        
     $user = User::where('email', $request->email)->first();
     if(is_null($user))

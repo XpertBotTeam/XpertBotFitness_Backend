@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Coach extends Model
 {
     use HasFactory;
+    protected $fillable = ['name','biography','photo','youtube_link'];
+
 
     public function workouts()
     {

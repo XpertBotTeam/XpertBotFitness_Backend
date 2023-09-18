@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('coaches', function (Blueprint $table) {
             $table->id();
              $table->string('name');
-             $table->text('certificates');
+             $table->text('biography');
              $table->string('photo');
              $table->string('youtube_link');
             $table->timestamps();
