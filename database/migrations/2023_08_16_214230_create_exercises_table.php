@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('title');
             $table->string('duration')->nullable();
             $table->string('youtube_link');
-            $table->foreignId('workout_id')->constrained()->onDelete('cascade');
+            $table->foreignId('workout_id')->constrained(
+                table: 'workouts', indexName: 'posts_user_id'
+            );
             $table->timestamps();
         });
     }

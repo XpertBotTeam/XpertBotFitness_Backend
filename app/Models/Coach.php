@@ -13,6 +13,6 @@ class Coach extends Model
 
     public function workouts()
     {
-        return $this->hasmany(Workout:: class);
+        return $this->hasMany(Workout:: class);
     }
 }

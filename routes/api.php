@@ -19,6 +19,7 @@ use App\Http\Controllers\API\ExerciseController;
 
  Route::resource('workouts',WorkoutController::class);
  Route::resource('coaches',CoachController::class);
+ Route::post('/coaches/image',[CoachController::class,'storeImage']);
  Route::resource('exercises',ExerciseController::class);
 
  Route::post('register',[AuthController::class,'register']);

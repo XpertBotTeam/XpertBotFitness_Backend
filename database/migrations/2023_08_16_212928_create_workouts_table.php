@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('duration')->nullable();
-            $table->foreingId('coach_id')->consrtained()->onDelete('cascade');
+            $table->foreignId('coach_id')->onDelete('cascade');
             $table->timestamps();
         });
     }
